@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #121423;
+  background-color: #f5f6fb;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header p {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  gap: 24px;
+}
+
+header nav a,
+footer nav a {
+  color: #121423;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #7c3aed;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#features h2 {
+  grid-column: 1 / -1;
+}
+
+.feature-card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#testimonials h2 {
+  flex-basis: 100%;
+}
+
+.testimonial {
+  flex: 1 1 260px;
+  margin: 0;
+  padding: 20px;
+  background: white;
+  border-left: 4px solid #7c3aed;
+}
+
+.testimonial cite {
+  color: #667085;
+}
+
+#pricing dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px 30px;
+}
+
+#pricing dt {
+  font-weight: bold;
+}
+
+#pricing dd {
+  margin: 0;
+}
+
+fieldset {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.consent input {
+  display: inline;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #7c3aed;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 25px 40px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+.cta:hover,
+button:hover {
+  background-color: #5b21b6;
+}
+
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #7c3aed;
+  outline-offset: 3px;
+}
